@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regístrate</title>
+    <link rel="stylesheet" href="scss/custom.min.css">   
+    <style>
+      .login-form {
+        max-width: 400px;
+        margin: 180px auto;
+        padding: 50px;
+        background-color: #F3F0E9; 
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .form-control {
+        margin-bottom: 15px;
+      }
+      .btn-custom {
+        background-color: #F1AB42; 
+        color: white;
+        border: none;
+      }
+      .btn-custom:hover {
+        background-color: #e69522; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-form">
+        <div class="card-body p-2">
+          <h2 class="text-center mb-4">Regístrate</h2>
+          <!-- Formulario corregido -->
+          <form action="BL/registre.php" method="POST">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="nom"
+                placeholder="Nombre Usuario"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                name="passwd"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-custom w-100">
+              Regístrate
+            </button>
+          </form>
+          <div class="mt-3 text-center">
+            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
